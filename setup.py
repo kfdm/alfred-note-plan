@@ -6,6 +6,7 @@ setup(
         "console_scripts": [
             "noteplan-list = alfrednoteplan.commands.list:main",
             "noteplan-date = alfrednoteplan.commands.date:main",
+            "noteplan-log = alfrednoteplan.commands.log:main",
         ],
     },
 )
