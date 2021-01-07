@@ -6,6 +6,19 @@
 	<string>net.kungfudiscomonkey.noteplan</string>
 	<key>connections</key>
 	<dict>
+		<key>51BDCA32-A81C-47DE-9E0B-82D182BF0F7A</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>2505A93A-CEC0-4915-98E6-0EA761DED78E</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+		</array>
 		<key>ABD8F7EB-A721-4C12-A5CA-C6441F954E1A</key>
 		<array>
 			<dict>
@@ -30,6 +43,55 @@
 	<string>Note Plan Buddy</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<true/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<true/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>0</integer>
+				<key>keyword</key>
+				<string>np</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<true/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>1</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string></string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string>.venv/bin/noteplan-list</string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Checking Notes</string>
+				<key>type</key>
+				<integer>8</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>ABD8F7EB-A721-4C12-A5CA-C6441F954E1A</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -81,11 +143,11 @@
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
-				<string>.venv/bin/noteplan-list</string>
+				<string>.venv/bin/noteplan-date</string>
 				<key>subtext</key>
 				<string></string>
 				<key>title</key>
-				<string></string>
+				<string>Checking Calendar</string>
 				<key>type</key>
 				<integer>8</integer>
 				<key>withspace</key>
@@ -94,7 +156,7 @@
 			<key>type</key>
 			<string>alfred.workflow.input.scriptfilter</string>
 			<key>uid</key>
-			<string>ABD8F7EB-A721-4C12-A5CA-C6441F954E1A</string>
+			<string>51BDCA32-A81C-47DE-9E0B-82D182BF0F7A</string>
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
@@ -110,12 +172,19 @@
 			<key>ypos</key>
 			<integer>165</integer>
 		</dict>
+		<key>51BDCA32-A81C-47DE-9E0B-82D182BF0F7A</key>
+		<dict>
+			<key>xpos</key>
+			<integer>210</integer>
+			<key>ypos</key>
+			<integer>225</integer>
+		</dict>
 		<key>ABD8F7EB-A721-4C12-A5CA-C6441F954E1A</key>
 		<dict>
 			<key>xpos</key>
 			<integer>205</integer>
 			<key>ypos</key>
-			<integer>165</integer>
+			<integer>65</integer>
 		</dict>
 	</dict>
 	<key>variables</key>
