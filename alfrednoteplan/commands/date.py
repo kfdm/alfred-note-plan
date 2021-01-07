@@ -1,18 +1,6 @@
-import pathlib
 import datetime
-from alfrednoteplan import decorators
 
-NOTES = (
-    pathlib.Path().home()
-    / "Library"
-    / "Containers"
-    / "co.noteplan.NotePlan3"
-    / "Data"
-    / "Library"
-    / "Application Support"
-    / "co.noteplan.NotePlan3"
-    / "Calendar"
-)
+from alfrednoteplan import constants, decorators
 
 TODAY = datetime.datetime.now()
 
@@ -28,7 +16,7 @@ DTFORMAT = "%Y%m%d"
 @decorators.jsonfilter
 def main():
     dates = {}
-    for path in sorted(NOTES.glob("*.md"), reverse=True)[:3]:
+    for path in sorted(constants.CALENDAR.glob("*.md"), reverse=True)[:3]:
         dt = datetime.datetime.strptime(path.stem, DTFORMAT)
         dates[path.stem] = {
             "arg": "noteplan://x-callback-url/openNote?noteDate=" + path.stem,
